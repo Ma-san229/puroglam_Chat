@@ -32,14 +32,16 @@ export function ChatInput() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2">
+    <form onSubmit={handleSubmit} className="flex gap-3">
       <Input
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Type your message..."
-        className="flex-1"
+        placeholder="質問を入力してね！"
+        className="flex-1 text-lg rounded-full px-6 border-2 border-blue-200 focus-visible:ring-blue-400"
       />
-      <Button type="submit">Send</Button>
+      <Button type="submit" className="rounded-full px-8 text-lg font-bold bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 transition-all duration-300">
+        送信 ✨
+      </Button>
     </form>
   );
 }

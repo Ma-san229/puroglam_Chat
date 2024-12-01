@@ -19,10 +19,10 @@ export function MessageList() {
             }`}
           >
             <div
-              className={`max-w-[80%] rounded-lg p-3 ${
+              className={`max-w-[80%] rounded-2xl p-4 text-lg shadow-lg ${
                 message.role === 'user'
-                  ? 'bg-primary text-primary-foreground'
-                  : 'bg-muted'
+                  ? 'bg-gradient-to-r from-blue-500 to-blue-600 text-white'
+                  : 'bg-gradient-to-r from-purple-500 to-pink-500 text-white'
               }`}
             >
               {message.content}
